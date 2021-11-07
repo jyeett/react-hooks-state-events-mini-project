@@ -41,7 +41,7 @@ function App() {
       <h2>My tasks</h2>
       <CategoryFilter categorySelected={categorySelected} handleSelect={handleSelect} categories={CATEGORIES}/>
       <NewTaskForm categories={CATEGORIES} onTaskFormSubmit={onTaskFormSubmit}/>
-      <TaskList renderTasks={renderTasks} handleDelete={handleDelete}/>
+      <TaskList tasks={renderTasks} handleDelete={handleDelete}/>
     </div>
   );
 }
